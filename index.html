@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>New Fashion Tailor — न्यू फैशन टेलर</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1: #0f0f0f;
+      --red: #ff2d55;
+      --blue: #2d9cff;
+      --white: #ffffff;
+      --glass: rgba(255,255,255,0.06);
+      font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0}
+    body{
+      background: radial-gradient(1200px 600px at 10% 10%, rgba(45,156,255,0.12), transparent 8%),
+                  radial-gradient(1000px 500px at 90% 80%, rgba(255,45,85,0.10), transparent 8%),
+                  linear-gradient(135deg, var(--bg1) 0%, #0b0b0b 40%, #050505 100%);
+      color:var(--white);
+      padding:36px 18px;display:flex;align-items:flex-start;justify-content:center;
+    }
+    .site{width:100%;max-width:1100px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:18px;padding:26px;box-shadow:0 10px 40px rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.04);}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:60px;height:60px;border-radius:12px;display:grid;place-items:center;font-weight:800;font-size:20px;background: conic-gradient(from 200deg, var(--red), var(--blue), var(--white));color:#000;padding:6px;}
+    nav a{color:rgba(255,255,255,0.9);text-decoration:none;margin-left:16px;font-weight:600}
+    .hero{display:flex;gap:22px;align-items:center;padding:22px 8px}
+    .hero-left{flex:1;min-width:260px}
+    .kicker{display:inline-block;padding:6px 12px;border-radius:999px;background:linear-gradient(90deg,var(--red),var(--blue));color:#000;font-weight:700;font-size:13px}
+    h1{font-size:40px;margin:14px 0 10px;line-height:1.02}
+    p.lead{margin:0 0 14px;opacity:0.95}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:12px;background:linear-gradient(90deg,var(--red),#ff7b9c);color:#fff;font-weight:700;border:none;cursor:pointer;text-decoration:none}
+    .slider{position:relative;width:100%;max-width:700px;margin:30px auto;overflow:hidden;border-radius:20px;}
+    .slides{display:flex;transition:transform 1s ease-in-out;width:100%}
+    .slide{min-width:100%;position:relative;text-align:center;color:white}
+    .slide img{width:100%;height:420px;object-fit:cover;border-radius:20px;filter:brightness(0.85)}
+    .caption{position:absolute;bottom:20px;left:0;right:0;text-align:center;background:rgba(0,0,0,0.4);padding:10px;font-weight:700;font-size:18px}
+    footer{margin-top:22px;padding-top:16px;border-top:1px dashed rgba(255,255,255,0.04);display:flex;justify-content:space-between;align-items:center}
+  </style>
+</head>
+<body>
+  <div class="site">
+    <header>
+      <div class="brand">
+        <div class="logo">NF</div>
+        <div>
+          <div style="font-weight:800;font-size:18px">New Fashion Tailor</div>
+          <div style="font-size:12px;opacity:0.75">Trusted Brands • कस्टम सिले हुए कपड़े</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#">होम</a>
+        <a href="#slider">कलेक्शन</a>
+        <a href="#contact">संपर्क</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-left">
+        <span class="kicker">विशेष पेशकश</span>
+        <h1>हर डिज़ाइन, हर फिट — New Fashion Tailor</h1>
+        <p class="lead">हम सिले हुए कपड़े जैसे Coat, Pant, Shirt, Safari, V Shape Jacket, U Shape Jacket, Stylish Kurta, Pajama, Jodhpuri Coat आदि बनाते हैं।</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn" href="tel:+919785668531">📞 कॉल करें</a>
+          <a class="btn" href="https://wa.me/919785668531" target="_blank">💬 वॉट्सऐप</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="slider">
+      <div class="slider">
+        <div class="slides">
+          <div class="slide"><img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=1200&q=60"><div class="caption">Coat</div></div>
+          <div class="slide"><img src="https://images.unsplash.com/photo-1618354691454-83df13629e1c?auto=format&fit=crop&w=1200&q=60"><div class="caption">Pant</div></div>
+          <div class="slide"><img src="https://images.unsplash.com/photo-1593032457861-6a7aa2a44f8a?auto=format&fit=crop&w=1200&q=60"><div class="caption">Shirt</div></div>
+          <div class="slide"><img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6b7e7?auto=format&fit=crop&w=1200&q=60"><div class="caption">Safari</div></div>
+          <div class="slide"><img src="https://images.unsplash.com/photo-1602810318383-e7b81d3f5df3?auto=format&fit=crop&w=1200&q=60"><div class="caption">V Shape Jacket</div></div>
+          <div class="slide"><img src="https://images.unsplash.com/photo-1592878898366-6b2c74f6d46d?auto=format&fit=crop&w=1200&q=60"><div class="caption">U Shape Jacket</div></div>
+          <div class="slide"><img src="https://images.unsplash.com/photo-1602820836036-09efde78d6f1?auto=format&fit=crop&w=1200&q=60"><div class="caption">Stylish Kurta Pajama</div></div>
+          <div class="slide"><img src="https://images.unsplash.com/photo-1592878849124-90a0f2a40d5e?auto=format&fit=crop&w=1200&q=60"><div class="caption">Jodhpuri Coat</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:30px">
+      <h2>संपर्क जानकारी</h2>
+      <p>📍 Baba Ramdev Ji Bairwa Samaj Mandir, Main Market, Kanwas — Pin 325602</p>
+      <p>👔 मालिक: Satynarayan Verma — 📞 <a href="tel:+919785668531" style="color:white">9785668531</a></p>
+      <p>🧵 करिगर: Antim Verma — 📞 <a href="tel:+919079384560" style="color:white">9079384560</a></p>
+    </section>
+
+    <footer>
+      <div>© 2025 New Fashion Tailor — Satynarayan Verma</div>
+      <div style="opacity:0.85">Trusted tailoring & fabrics</div>
+    </footer>
+  </div>
+
+  <script>
+    const slides=document.querySelector('.slides');
+    let index=0;
+    setInterval(()=>{
+      index=(index+1)%slides.children.length;
+      slides.style.transform=`translateX(-${index*100}%)`;
+    },4000);
+  </script>
+</body>
+</html>
